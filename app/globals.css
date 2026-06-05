@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* -------- Supabase Studio classic-dark tokens (resolved from
+   apps/studio/styles/globals.css + packages/ui/build/css/themes/classic-dark.css) -------- */
+:root {
+  --color-bg:               hsl(0   0%   11%);   /* gray-dark-200 — page bg */
+  --color-bg-sidebar:       hsl(0   0%   11%);
+  --color-surface-100:      hsl(0   0%   13.7%);
+  --color-surface-200:      hsl(0   0%   16%);
+  --color-surface-300:      hsl(0   0%   18%);
+  --color-surface-400:      hsl(0   0%   24.3%);
+  --color-selection:        hsl(0   0%   21%);
+
+  --color-border:           hsl(0   0%   21%);
+  --color-border-muted:     hsl(0   0%   18%);
+  --color-border-strong:    hsl(0   0%   24.3%);
+  --color-border-overlay:   hsl(0   0%   18%);
+
+  --color-fg:               hsl(0   0%   92.9%);
+  --color-fg-light:         hsl(0   0%   62.7%);
+  --color-fg-lighter:       hsl(0   0%   50%);
+  --color-fg-muted:         hsl(0   0%   38%);
+
+  --color-brand:            hsl(153.1 60.2% 52.7%); /* #3ECF8E */
+  --color-brand-bg:         hsl(152.5 75%   6.3%);
+  --color-brand-ring:       hsl(153.1 60.2% 52.7% / 0.35);
+
+  --color-warning:          hsl(38.9  100%  57.1%);
+  --color-warning-bg:       hsl(36.8  100%  10.1%);
+  --color-destructive:      hsl(10.2  77.9% 53.9%);
+  --color-destructive-bg:   hsl(10.9  23.4% 9.2%);
+
+  --text-grid: 13px;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: var(--font-mono-pro), "Source Code Pro", "Menlo", monospace;
+}
+
+html, body, #__next {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-inter), "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+}
+
+* {
+  box-sizing: border-box;
+  border-color: var(--color-border);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brand-ring);
+  outline-offset: 1px;
+}
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-400);
+  border-radius: 999px;
+  border: 2px solid var(--color-bg);
+}
+::-webkit-scrollbar-thumb:hover { background: var(--color-fg-muted); }
+
+.row-focused {
+  background: hsl(153.1 60.2% 52.7% / 0.06);
+  box-shadow: inset 2px 0 0 0 var(--color-brand);
+}
+.row-focused-muted {
+  background: hsl(0 0% 100% / 0.025);
+  box-shadow: inset 2px 0 0 0 var(--color-surface-400);
+}
+
+kbd {
+  font-family: var(--font-mono-pro), "Source Code Pro", monospace;
+  font-size: 10px;
+  background: var(--color-surface-200);
+  border: 1px solid var(--color-border);
+  border-bottom-width: 2px;
+  border-radius: 3px;
+  padding: 1px 4px;
+  color: var(--color-fg-light);
+  line-height: 1;
+}
