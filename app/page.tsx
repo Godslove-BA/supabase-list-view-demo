@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { GridViewTable } from "./components/grid-view-table";
 import { ListViewTable } from "./components/list-view-table";
@@ -32,6 +33,17 @@ export default function Page() {
 
   return (
     <main className="flex h-dvh flex-col bg-[var(--color-bg)] text-[var(--color-fg)]">
+      {/* Companion-artifact link — surfaces the second portfolio piece */}
+      <div className="flex h-7 shrink-0 items-center justify-center gap-2 border-b border-[var(--color-border)] bg-[var(--color-surface-100)] px-4 text-[11px] text-[var(--color-fg-light)]">
+        <span className="text-[var(--color-fg-lighter)]">also see</span>
+        <Link
+          href="/empty-states"
+          className="inline-flex items-center gap-1 text-[var(--color-brand)] hover:underline"
+        >
+          ↗ Teach-first empty states · a design proposal for 3 Studio surfaces (PR #46664)
+        </Link>
+      </div>
+
       {/* Top bar */}
       <header className="flex h-12 shrink-0 items-center justify-between border-b border-[var(--color-border)] bg-[var(--color-bg-sidebar)] px-4">
         <div className="flex items-center gap-3">

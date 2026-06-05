@@ -4,6 +4,8 @@
 
 **Live demo:** https://supabase-list-view-demo.vercel.app
 
+**Empty-states design proposal:** https://supabase-list-view-demo.vercel.app/empty-states (companion to [PR #46664](https://github.com/supabase/supabase/pull/46664) — a clickable Before/After prototype of three teach-first Studio empty states)
+
 **Source:** https://github.com/Godslove-BA/supabase-list-view-demo
 
 ![List view](./docs/list-view.png)

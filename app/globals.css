@@ -86,3 +86,9 @@ kbd {
   color: var(--color-fg-light);
   line-height: 1;
 }
+
+/* QuickStartSnippet — minimal syntax tokens, tuned for classic-dark */
+.tok-comment  { color: hsl(0 0% 42%); font-style: italic; }
+.tok-string   { color: hsl(153.1 60.2% 60%); }
+.tok-keyword  { color: hsl(210 65% 70%); }
+.tok-number   { color: hsl(28 80% 65%); }
