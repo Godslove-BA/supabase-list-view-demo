@@ -2,7 +2,7 @@
 
 > A design proposal — not affiliated with Supabase. Built to be a thinking aid for the Studio team, and a self-contained playground anyone can run in 30 seconds.
 
-**Live demo:** _[DEMO URL — fill after vercel deploy]_
+**Live demo:** https://supabase-list-view-demo.vercel.app
 
 **Source:** https://github.com/Godslove-BA/supabase-list-view-demo
 
