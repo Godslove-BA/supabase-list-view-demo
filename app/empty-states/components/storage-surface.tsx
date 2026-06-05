@@ -9,28 +9,28 @@ import { Surface } from "./surface";
 
 type BucketType = "files" | "analytics" | "vectors";
 
+// Verbatim copy from supabase/supabase
+// apps/studio/components/interfaces/Storage/Storage.constants.ts
 const BUCKET_TYPES = {
   files: {
     label: "Files",
     article: "a",
-    singularName: "files",
-    valueProp: "Store images, videos, documents, or any other file type.",
+    singularName: "file",
+    valueProp: "Store images, videos, documents, and any other file type.",
     icon: FolderPlus,
   },
   analytics: {
     label: "Analytics",
     article: "an",
     singularName: "analytics",
-    valueProp:
-      "Store Iceberg-compatible Parquet data and query it with SQL — no warehouse to manage.",
+    valueProp: "Store large datasets for analytics and reporting.",
     icon: BarChart3,
   },
   vectors: {
     label: "Vectors",
     article: "a",
     singularName: "vectors",
-    valueProp:
-      "Store embeddings and run K-nearest-neighbour search from the same client SDK.",
+    valueProp: "Store, index, and query your vector embeddings at scale.",
     icon: Sparkles,
   },
 } as const;

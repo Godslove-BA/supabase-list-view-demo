@@ -16,12 +16,12 @@ using ((select auth.uid()) = user_id);`;
 export function PoliciesSurface() {
   const before = (
     <PolicyCard>
-      <div className="p-4 flex flex-col items-start gap-3">
-        <p className="text-[var(--color-fg-lighter)] text-[13px]">
-          No policies created yet. Most tables need at least one policy per role
-          + command pair.
-        </p>
-      </div>
+      {/* Verbatim from supabase/supabase
+          apps/studio/components/interfaces/Auth/Policies/PolicyTableRow/index.tsx
+          — the entire empty-state branch is just this one muted line. */}
+      <p className="text-[var(--color-fg-lighter)] text-[13px] p-4">
+        No policies created yet
+      </p>
     </PolicyCard>
   );
 
